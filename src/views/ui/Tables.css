@@ -1,0 +1,23 @@
+.table-without-vertical-borders th,
+.table-without-vertical-borders td {
+  border-right: none !important;
+  border-left: none !important;
+}
+
+.table-without-vertical-borders thead th {
+  border-bottom: 2px solid #dee2e6 !important;
+}
+
+.table-without-vertical-borders tbody tr {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.card-body {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}

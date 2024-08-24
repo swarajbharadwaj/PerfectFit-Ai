@@ -1,0 +1,23 @@
+.sidebar-bg {
+       background-color: #000; /* Black background */
+     }
+     
+     .nav-link {
+       color: #fff !important; /* Ensure the text is white */
+     }
+     
+     .nav-link.text-primary {
+       color: #0d6efd !important; /* Ensure primary link color is visible */
+     }
+     
+     .nav-link.text-secondary {
+       color: #6c757d !important; /* Ensure secondary link color is visible */
+     }
+     .sticky-sidebar {
+       position: -webkit-sticky; /* For Safari */
+       position: sticky;
+       top: 0; /* Sidebar sticks to the top of the viewport */
+       height: 100vh; /* Full viewport height */
+       overflow-y: auto; /* Scrollable content inside the sidebar */
+       background-color: black; /* Background color for the sidebar */
+     }

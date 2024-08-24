@@ -1,0 +1,63 @@
+/* FullLayout.css */
+
+/* Ensure the pageWrapper takes full width */
+.pageWrapper {
+       display: flex;
+       width: 100%;
+       height: 100vh; /* Full viewport height */
+       overflow: hidden; /* Hide overflow to avoid unwanted scrollbars */
+     }
+     
+     /* Sidebar styles */
+     .sidebarArea {
+       position: fixed; /* Fixed position to keep it in place */
+       top: 0;
+       left: 0;
+       bottom: 0;
+       width: 250px; /* Adjust based on your design */
+       background-color: #fff; /* Adjust based on your design */
+       z-index: 1000; /* Higher than content but lower than modal or floating elements */
+       overflow-y: auto; /* Enable scrolling if content overflows */
+     }
+     
+     /* Header styles */
+     .header {
+       position: fixed; /* Fixed position to keep it in place */
+       top: 60;
+       left: 200px; /* Offset for sidebar width */
+       right: 0px;
+       height: 60px; /* Adjust based on your design */
+       background-color: #fff; /* Adjust based on your design */
+       z-index: 1000; /* Higher than sidebar */
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better separation */
+       display: flex;
+       align-items: center;
+       padding: 0 1rem; /* Optional: add padding as needed */
+     }
+     
+     /* Content area styles */
+     .contentArea {
+       margin-left: 250px;
+        /* Offset for sidebar width */
+       margin-top: 0px; /* Offset for header height */
+       padding-top: 0rem; /* Optional: add padding as needed */
+       background-color: #f8f9fa; /* Optional: adjust background color */
+       height: calc(100vh - 60px); /* Adjust height to account for header height */
+       overflow: hidden; /* Hide overflow by default */
+     }
+     
+     /* Inner content area styles */
+     .contentArea1 {
+       height: 100%; /* Fill the height of the parent container */
+       overflow-y: auto; /* Enable vertical scrolling */
+       overflow-x: hidden; /* Prevent horizontal scrolling */
+     }
+     
+     /* Optional: Style for content container */
+     .content {
+       padding: 1rem; /* Adjust padding as needed */
+       background-color: #f8f9fa; /* Light background for content area */
+       z-index: 1; /* Ensure it is above other elements */
+       position: relative; /* Allow for positioning relative to parent */
+     }
+     
